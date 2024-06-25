@@ -1,304 +1,191 @@
 {
-    "students": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "age": 20,
-            "major": "Computer Science"
-        },
-        {
-            "id": 2,
-            "name": "Jane Smith",
-            "age": 19,
-            "major": "Mathematics"
-        },
-        {
-            "id": 3,
-            "name": "Alex Johnson",
-            "age": 21,
-            "major": "Physics"
-        },
-        {
-            "id": 4,
-            "name": "Emily Brown",
-            "age": 22,
-            "major": "Chemistry"
-        },
-        {
-            "id": 5,
-            "name": "Michael Wilson",
-            "age": 20,
-            "major": "Biology"
-        },
-        {
-            "id": 6,
-            "name": "Sarah Johnson",
-            "age": 19,
-            "major": "English"
-        },
-        {
-            "id": 7,
-            "name": "David Lee",
-            "age": 21,
-            "major": "History"
-        },
-        {
-            "id": 8,
-            "name": "Jennifer Davis",
-            "age": 20,
-            "major": "Psychology"
-        },
-        {
-            "id": 9,
-            "name": "Christopher Martinez",
-            "age": 22,
-            "major": "Sociology"
-        },
-        {
-            "id": 10,
-            "name": "Jessica Thompson",
-            "age": 19,
-            "major": "Art"
-        },
-        {
-            "id": 11,
-            "name": "Matthew Anderson",
-            "age": 21,
-            "major": "Music"
-        },
-        {
-            "id": 12,
-            "name": "Olivia Wilson",
-            "age": 20,
-            "major": "Drama"
-        },
-        {
-            "id": 13,
-            "name": "Daniel Taylor",
-            "age": 22,
-            "major": "Film"
-        },
-        {
-            "id": 14,
-            "name": "Sophia Brown",
-            "age": 19,
-            "major": "Design"
-        },
-        {
-            "id": 15,
-            "name": "Ethan Clark",
-            "age": 21,
-            "major": "Architecture"
-        },
-        {
-            "id": 16,
-            "name": "Ava Lewis",
-            "age": 20,
-            "major": "Engineering"
-        },
-        {
-            "id": 17,
-            "name": "William Hall",
-            "age": 22,
-            "major": "Business"
-        },
-        {
-            "id": 18,
-            "name": "Mia Turner",
-            "age": 19,
-            "major": "Marketing"
-        },
-        {
-            "id": 19,
-            "name": "James Adams",
-            "age": 21,
-            "major": "Finance"
-        },
-        {
-            "id": 20,
-            "name": "Charlotte Mitchell",
-            "age": 20,
-            "major": "Economics"
-        },
-        {
-            "id": 21,
-            "name": "Benjamin Hernandez",
-            "age": 22,
-            "major": "Political Science"
-        },
-        {
-            "id": 22,
-            "name": "Amelia Young",
-            "age": 19,
-            "major": "International Relations"
-        },
-        {
-            "id": 23,
-            "name": "Daniel Scott",
-            "age": 21,
-            "major": "Journalism"
-        },
-        {
-            "id": 24,
-            "name": "Emily Green",
-            "age": 20,
-            "major": "Communications"
-        },
-        {
-            "id": 25,
-            "name": "Alexander Phillips",
-            "age": 22,
-            "major": "Public Relations"
-        },
-        {
-            "id": 26,
-            "name": "Grace Martinez",
-            "age": 19,
-            "major": "Advertising"
-        },
-        {
-            "id": 27,
-            "name": "Joseph Turner",
-            "age": 21,
-            "major": "Graphic Design"
-        },
-        {
-            "id": 28,
-            "name": "Chloe Adams",
-            "age": 20,
-            "major": "Fashion"
-        },
-        {
-            "id": 29,
-            "name": "Samuel Mitchell",
-            "age": 22,
-            "major": "Photography"
-        },
-        {
-            "id": 30,
-            "name": "Lily Hernandez",
-            "age": 19,
-            "major": "Interior Design"
-        },
-        {
-            "id": 31,
-            "name": "Daniel Turner",
-            "age": 21,
-            "major": "Computer Engineering"
-        },
-        {
-            "id": 32,
-            "name": "Sophia Davis",
-            "age": 20,
-            "major": "Electrical Engineering"
-        },
-        {
-            "id": 33,
-            "name": "Ethan Wilson",
-            "age": 22,
-            "major": "Mechanical Engineering"
-        },
-        {
-            "id": 34,
-            "name": "Olivia Clark",
-            "age": 19,
-            "major": "Civil Engineering"
-        },
-        {
-            "id": 35,
-            "name": "Noah Anderson",
-            "age": 21,
-            "major": "Chemical Engineering"
-        },
-        {
-            "id": 36,
-            "name": "Emma Lewis",
-            "age": 20,
-            "major": "Aerospace Engineering"
-        },
-        {
-            "id": 37,
-            "name": "William Hall",
-            "age": 22,
-            "major": "Biomedical Engineering"
-        },
-        {
-            "id": 38,
-            "name": "Ava Turner",
-            "age": 19,
-            "major": "Environmental Engineering"
-        },
-        {
-            "id": 39,
-            "name": "Liam Hernandez",
-            "age": 21,
-            "major": "Software Engineering"
-        },
-        {
-            "id": 40,
-            "name": "Isabella Young",
-            "age": 20,
-            "major": "Data Science"
-        },
-        {
-            "id": 41,
-            "name": "Mason Scott",
-            "age": 22,
-            "major": "Artificial Intelligence"
-        },
-        {
-            "id": 42,
-            "name": "Sophia Green",
-            "age": 19,
-            "major": "Machine Learning"
-        },
-        {
-            "id": 43,
-            "name": "Logan Phillips",
-            "age": 21,
-            "major": "Cybersecurity"
-        },
-        {
-            "id": 44,
-            "name": "Mia Martinez",
-            "age": 20,
-            "major": "Web Development"
-        },
-        {
-            "id": 45,
-            "name": "Lucas Adams",
-            "age": 22,
-            "major": "Mobile App Development"
-        },
-        {
-            "id": 46,
-            "name": "Ava Turner",
-            "age": 19,
-            "major": "Game Development"
-        },
-        {
-            "id": 47,
-            "name": "Jackson Mitchell",
-            "age": 21,
-            "major": "Database Management"
-        },
-        {
-            "id": 48,
-            "name": "Olivia Davis",
-            "age": 20,
-            "major": "Network Administration"
-        },
-        {
-            "id": 49,
-            "name": "Aiden Wilson",
-            "age": 22,
-            "major": "Cloud Computing"
-        },
-        {
-            "id": 50,
-            "name": "Emma Clark",
-            "age": 19,
-            "major": "DevOps"
-        }
-    ]
+  "students": [
+    {
+      "id": "4",
+      "name": "Ana Souza",
+      "registration": "2023004",
+      "course": "Enfermagem",
+      "campus": "João Monlevade",
+      "address": "Av D, 101, Centro, João Monlevade, MG",
+      "birthdate": "1998-11-30",
+      "phone": "(31) 96666-0004",
+      "cpf": "45678901234"
+    },
+    {
+      "id": "5",
+      "name": "Carlos Pereira",
+      "registration": "2023005",
+      "course": "Administração",
+      "campus": "Caratinga",
+      "address": "Rua E, 102, Centro, Caratinga, MG",
+      "birthdate": "2000-04-20",
+      "phone": "(33) 95555-0005",
+      "cpf": "56789012345"
+    },
+    {
+      "id": "6",
+      "name": "Fernanda Almeida",
+      "registration": "2023006",
+      "course": "Psicologia",
+      "campus": "Belo Horizonte",
+      "address": "Av F, 203, Centro, Belo Horizonte, MG",
+      "birthdate": "1997-07-15",
+      "phone": "(31) 94444-0006",
+      "cpf": "67890123456"
+    },
+    {
+      "id": "7",
+      "name": "Lucas Rocha",
+      "registration": "2023007",
+      "course": "Ciência da Computação",
+      "campus": "Teofilo Otoni",
+      "address": "Rua G, 305, Centro, Teofilo Otoni, MG",
+      "birthdate": "2001-03-10",
+      "phone": "(33) 93333-0007",
+      "cpf": "78901234567"
+    },
+    {
+      "id": "8",
+      "name": "Juliana Costa",
+      "registration": "2023008",
+      "course": "Arquitetura",
+      "campus": "Ipatinga",
+      "address": "Av H, 407, Centro, Ipatinga, MG",
+      "birthdate": "2000-09-05",
+      "phone": "(31) 92222-0008",
+      "cpf": "89012345678"
+    },
+    {
+      "id": "9",
+      "name": "Marcos Lima",
+      "registration": "2023009",
+      "course": "Engenharia Elétrica",
+      "campus": "Cataguases",
+      "address": "Rua I, 509, Centro, Cataguases, MG",
+      "birthdate": "1999-02-25",
+      "phone": "(32) 91111-0009",
+      "cpf": "90123456789"
+    },
+    {
+      "id": "10",
+      "name": "Laura Martins",
+      "registration": "2023010",
+      "course": "Fisioterapia",
+      "campus": "João Monlevade",
+      "address": "Av J, 610, Centro, João Monlevade, MG",
+      "birthdate": "2001-12-20",
+      "phone": "(31) 90000-0010",
+      "cpf": "01234567890"
+    },
+    {
+      "id": "11",
+      "name": "Renato Gomes",
+      "registration": "2023011",
+      "course": "Contabilidade",
+      "campus": "Caratinga",
+      "address": "Rua K, 711, Centro, Caratinga, MG",
+      "birthdate": "1998-06-15",
+      "phone": "(33) 98888-0011",
+      "cpf": "12345678901"
+    },
+    {
+      "id": "12",
+      "name": "Sofia Barbosa",
+      "registration": "2023012",
+      "course": "Letras",
+      "campus": "Belo Horizonte",
+      "address": "Av L, 812, Centro, Belo Horizonte, MG",
+      "birthdate": "1999-03-10",
+      "phone": "(31) 97777-0012",
+      "cpf": "23456789012"
+    },
+    {
+      "id": "13",
+      "name": "Felipe Cardoso",
+      "registration": "2023013",
+      "course": "Engenharia Mecânica",
+      "campus": "Teofilo Otoni",
+      "address": "Rua M, 913, Centro, Teofilo Otoni, MG",
+      "birthdate": "2000-01-05",
+      "phone": "(33) 96666-0013",
+      "cpf": "34567890123"
+    },
+    {
+      "id": "14",
+      "name": "Amanda Ribeiro",
+      "registration": "2023014",
+      "course": "Medicina Veterinária",
+      "campus": "Ipatinga",
+      "address": "Av N, 1014, Centro, Ipatinga, MG",
+      "birthdate": "1997-10-30",
+      "phone": "(31) 95555-0014",
+      "cpf": "45678901234"
+    },
+    {
+      "id": "15",
+      "name": "Ricardo Fernandes",
+      "registration": "2023015",
+      "course": "Biologia",
+      "campus": "Cataguases",
+      "address": "Rua O, 1115, Centro, Cataguases, MG",
+      "birthdate": "2001-07-25",
+      "phone": "(32) 94444-0015",
+      "cpf": "56789012345"
+    },
+    {
+      "id": "16",
+      "name": "Patrícia Mendes",
+      "registration": "2023016",
+      "course": "Nutrição",
+      "campus": "João Monlevade",
+      "address": "Av P, 1216, Centro, João Monlevade, MG",
+      "birthdate": "1999-04-20",
+      "phone": "(31) 93333-0016",
+      "cpf": "67890123456"
+    },
+    {
+      "id": "17",
+      "name": "Gabriel Alves",
+      "registration": "2023017",
+      "course": "Farmácia",
+      "campus": "Caratinga",
+      "address": "Rua Q, 1317, Centro, Caratinga, MG",
+      "birthdate": "2000-11-15",
+      "phone": "(33) 92222-0017",
+      "cpf": "78901234567"
+    },
+    {
+      "id": "18",
+      "name": "Luana Teixeira",
+      "registration": "2023018",
+      "course": "Educação Física",
+      "campus": "Belo Horizonte",
+      "address": "Av R, 1418, Centro, Belo Horizonte, MG",
+      "birthdate": "1998-08-10",
+      "phone": "(31) 91111-0018",
+      "cpf": "89012345678"
+    },
+    {
+      "id": "19",
+      "name": "Daniel Costa",
+      "registration": "2023019",
+      "course": "Química",
+      "campus": "Teofilo Otoni",
+      "address": "Rua S, 1519, Centro, Teofilo Otoni, MG",
+      "birthdate": "1997-05-05",
+      "phone": "(33) 90000-0019",
+      "cpf": "90123456789"
+    },
+    {
+      "id": "20",
+      "name": "Camila Figueiredo",
+      "registration": "2023020",
+      "course": "História",
+      "campus": "Ipatinga",
+      "address": "Av T, 1620, Centro, Ipatinga, MG",
+      "birthdate": "2000-02-28",
+      "phone": "(31) 98888-0020",
+      "cpf": "01234567890"
+    }
+  ]
 }
