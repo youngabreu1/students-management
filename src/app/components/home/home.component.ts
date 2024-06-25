@@ -11,15 +11,9 @@ import { Student } from '../../models/student';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent{
   students: Student[] = new Array<Student>();
 
   constructor(private studentService: StudentService) { }
-
-  ngOnInit(): void {
-    this.studentService.getStudents().subscribe((students: Student[]) => {
-      this.students = students;
-      console.log(this.students)
-    });
-  }
+  
 }
