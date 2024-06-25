@@ -1,3 +1,35 @@
-<div style="display: flex; justify-content: center; height: 500px;">
-    <div>oi list</div>
+<div class="container p-3 align-items-start">
+    <button class="badge text-bg-dark mb-2">Inserir aluno</button>
+    <div class="table-responsive text-start" style="max-height: 600px; overflow-y: auto;">
+        <table class="table table-dark table-bordered table-striped table-hover table-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th>Aluno</th>
+                    <th>Matrícula</th>
+                    <th>Curso</th>
+                    <th>Polo</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students">
+                    <td>{{ student.name }}</td>
+                    <td>{{ student.registration }}</td>
+                    <td>{{ student.course }}</td>
+                    <td>{{ student.campus }}</td>
+                    <td>
+                        <div style="display: flex; flex-direction: row; gap: 20px;">
+                            <div style="cursor: pointer;">
+                                <img src="../../../assets/edit.png" style="height: 20px; width: 20px;" alt="">
+                            </div>
+                            <div style="cursor: pointer;"(click)="openDeleteModal(student)">
+                                <img src="../../../assets/trash-bin.png" style="height: 20px; width: 20px;" alt="">
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
 </div>
