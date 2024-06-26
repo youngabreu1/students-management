@@ -1,0 +1,18 @@
+.carousel-caption {
+
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption h1,
+    .carousel-caption h3,
+    .carousel-caption p {
+      font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+    }
+  
+    .carousel-caption {
+      display: block; /* Garante que a legenda seja exibida */
+      background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo semi-transparente para melhor visibilidade */
+      padding: 3px; /* Adiciona padding para evitar que o texto fique muito colado */
+    }
+  }
+  
