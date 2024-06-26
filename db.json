@@ -186,6 +186,17 @@
       "birthdate": "2000-02-28",
       "phone": "(31) 98888-0020",
       "cpf": "01234567890"
+    },
+    {
+      "id": "ee96",
+      "name": "asdasd",
+      "cpf": "125.222.222-12",
+      "course": "asdas",
+      "campus": "asdasd",
+      "address": "sadasd",
+      "birthdate": "2024-06-05",
+      "phone": "319984121231",
+      "registration": 135542
     }
   ]
 }

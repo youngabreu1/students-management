@@ -6,11 +6,13 @@ import { CommonModule } from '@angular/common';
 import { MatDialogModule, MatDialog } from '@angular/material/dialog';
 import { DeleteModalComponent } from '../delete-student-modal/delete-student-modal.component';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatButtonModule } from '@angular/material/button';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-students-list',
   standalone: true,
-  imports: [CommonModule, MatDialogModule],
+  imports: [CommonModule, MatDialogModule, MatPaginator, MatButtonModule, RouterModule],
   templateUrl: './students-list.component.html',
   styleUrl: './students-list.component.css'
 })

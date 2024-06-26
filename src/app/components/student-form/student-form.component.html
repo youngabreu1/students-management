@@ -1,21 +1,56 @@
-<p>student-form works!</p>
-<div class="container">
-    <form action="">
-        <div>
-            <label for="email">E-mail</label>
-            <input type="text" id="email">
-            <div></div>
+<div class="container text-light" style="font-family: Poppins, sans-serif">
+    <h3 class="text-light">Cadastro</h3>
+    <form [formGroup]="studentForm" (ngSubmit)="onSubmit()" class="flex-row mt-4">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome:</label>
+        <input type="text" id="name" formControlName="name" class="form-control">
+        <div *ngIf="studentForm.controls['name'].invalid && studentForm.controls['name'].touched" class="text-danger">
+          Nome é obrigatório.
         </div>
-        <div>
-            <label for=""></label>
-            <input type="text">
-            <div></div>
+      </div>
+      <div class="mb-3">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" formControlName="cpf" class="form-control">
+        <div *ngIf="studentForm.controls['cpf'].invalid && studentForm.controls['cpf'].touched" class="text-danger">
+          CPF é obrigatório e deve estar no formato 000.000.000-00.
         </div>
-        <div>
-            <label for=""></label>
-            <input type="text">
-            <div></div>
+      </div>
+      <div class="mb-3">
+        <label for="course" class="form-label">Curso:</label>
+        <input type="text" id="course" formControlName="course" class="form-control">
+        <div *ngIf="studentForm.controls['course'].invalid && studentForm.controls['course'].touched" class="text-danger">
+          Curso é obrigatório.
         </div>
-        <button></button>
+      </div>
+      <div class="mb-3">
+        <label for="campus" class="form-label">Polo:</label>
+        <input type="text" id="campus" formControlName="campus" class="form-control">
+        <div *ngIf="studentForm.controls['campus'].invalid && studentForm.controls['campus'].touched" class="text-danger">
+          Polo é obrigatório.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Endereço:</label>
+        <input type="text" id="address" formControlName="address" class="form-control">
+        <div *ngIf="studentForm.controls['address'].invalid && studentForm.controls['address'].touched" class="text-danger">
+          Endereço é obrigatório.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="birthdate" class="form-label mx-1">Data de nascimento:</label>
+        <input type="date" id="birthdate" formControlName="birthdate" class="form-control-sm">
+        <div *ngIf="studentForm.controls['birthdate'].invalid && studentForm.controls['birthdate'].touched" class="text-danger">
+          Data de nascimento é obrigatória.
+        </div>
+      </div>
+      <div class="mb-3" class="form-label">
+        <label for="phone">Telefone:</label>
+        <input type="text" id="phone" formControlName="phone" class="form-control">
+        <div *ngIf="studentForm.controls['phone'].invalid && studentForm.controls['phone'].touched" class="text-danger">
+          Telefone é obrigatório.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-info mt-3" [disabled]="studentForm.invalid">Criar</button>
     </form>
-</div>
+  </div>
+  
