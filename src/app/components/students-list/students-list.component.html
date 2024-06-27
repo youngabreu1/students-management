@@ -22,7 +22,7 @@
                     <td>{{ student.campus }}</td>
                     <td>
                         <div style="display: flex; flex-direction: row; gap: 20px; justify-content: flex-end;">
-                            <div style="cursor: pointer;">
+                            <div style="cursor: pointer;" [routerLink]="['/students/edit', student.id]">
                                 <img src="../../../assets/edit.png" style="height: 20px; width: 20px;" alt="">
                             </div>
                             <div style="cursor: pointer;"(click)="openDeleteModal(student)">
