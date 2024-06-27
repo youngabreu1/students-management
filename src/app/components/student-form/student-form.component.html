@@ -10,10 +10,20 @@
       </div>
       <div class="mb-3">
         <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" formControlName="cpf" class="form-control">
+        <input type="text" id="cpf" formControlName="cpf" class="form-control" mask="000.000.000-00">
         <div *ngIf="studentForm.controls['cpf'].invalid && studentForm.controls['cpf'].touched" class="text-danger">
-          CPF é obrigatório e deve estar no formato 000.000.000-00.
+          CPF é obrigatório e deve ser válido.
         </div>
+        <label for="email" class="form-label">E-mail:</label>
+<input type="text" id="email" formControlName="email" class="form-control">
+<div *ngIf="studentForm.get('email')?.invalid && studentForm.get('email')?.touched" class="text-danger">
+  <div *ngIf="studentForm.get('email')?.errors?.['required']">
+    Email é obrigatório.
+  </div>
+  <div *ngIf="studentForm.get('email')?.errors?.['pattern']">
+    Email inválido. Por favor, insira um email válido.
+  </div>
+</div>
       </div>
       <div class="mb-3">
         <label for="course" class="form-label">Curso:</label>
@@ -43,14 +53,14 @@
           Data de nascimento é obrigatória.
         </div>
       </div>
-      <div class="mb-3" class="form-label">
+      <div class="mb-3">
         <label for="phone">Telefone:</label>
-        <input type="text" id="phone" formControlName="phone" class="form-control">
+        <input type="text" id="telefone" formControlName="phone" class="form-control" mask="(00) 00000-0000">
         <div *ngIf="studentForm.controls['phone'].invalid && studentForm.controls['phone'].touched" class="text-danger">
-          Telefone é obrigatório.
+          Telefone é obrigatório e deve ser válido.
         </div>
       </div>
-      <button type="submit" class="btn btn-info mt-3" [disabled]="studentForm.invalid">Criar</button>
+      <button type="submit" class="btn btn-info mt-3" [disabled]="studentForm.invalid">Enviar</button>
     </form>
   </div>
   
