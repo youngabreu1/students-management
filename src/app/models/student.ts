@@ -1,5 +1,5 @@
 export class Student {
-  id?: number;
+  id?: string;
   name?: string
   registration?: number
   course?: string
@@ -8,4 +8,5 @@ export class Student {
   birthdate?: string
   phone?: string
   cpf?: string
+  email?: string
 }

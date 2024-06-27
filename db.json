@@ -1,15 +1,15 @@
 {
   "students": [
     {
-      "id": "4",
       "name": "Ana Souza",
-      "registration": "2023004",
+      "cpf": "45678901234",
       "course": "Enfermagem",
       "campus": "João Monlevade",
       "address": "Av D, 101, Centro, João Monlevade, MG",
       "birthdate": "1998-11-30",
       "phone": "(31) 96666-0004",
-      "cpf": "45678901234"
+      "registration": 3687504,
+      "id": "4"
     },
     {
       "id": "5",
@@ -188,15 +188,71 @@
       "cpf": "01234567890"
     },
     {
-      "id": "ee96",
-      "name": "asdasd",
-      "cpf": "125.222.222-12",
+      "id": "2873",
+      "name": "asdasdas",
+      "cpf": "11111222222",
       "course": "asdas",
       "campus": "asdasd",
-      "address": "sadasd",
-      "birthdate": "2024-06-05",
-      "phone": "319984121231",
-      "registration": 135542
+      "address": "asdasdas",
+      "birthdate": "2024-05-29",
+      "phone": "21321312321321",
+      "registration": 1162442
+    },
+    {
+      "id": "a506",
+      "name": "sdaasd",
+      "cpf": "11111111111",
+      "course": "asdasdasda",
+      "campus": "asdasdas",
+      "address": "asdasdas",
+      "birthdate": "2024-05-28",
+      "phone": "123123123",
+      "registration": 8664416
+    },
+    {
+      "name": "asdasd",
+      "cpf": "12131212321",
+      "course": "123awd",
+      "campus": "asdasd",
+      "address": "asdasdas",
+      "birthdate": "2024-05-29",
+      "phone": "31998421138",
+      "registration": 5710130,
+      "id": "f4eb"
+    },
+    {
+      "name": "Mariana Domingues",
+      "cpf": "02392352212",
+      "course": "Ciências Contábeis",
+      "campus": "Nova Era",
+      "address": "Rua Jade 233 Colina Nova Era",
+      "birthdate": "2002-01-26",
+      "phone": "31998421138",
+      "registration": 258843,
+      "id": "bbd1"
+    },
+    {
+      "id": "ee58",
+      "name": "Gabriel",
+      "cpf": "12555342233",
+      "course": "S.I",
+      "campus": "Ipa",
+      "address": "Rua tal, Avenida tanto",
+      "birthdate": "2024-03-06",
+      "phone": "31998421138",
+      "registration": 3236463
+    },
+    {
+      "id": "41f5",
+      "name": "Gabriel Carlos",
+      "email": "Gasd",
+      "cpf": "12566766673",
+      "course": "S.I",
+      "campus": "Ipa",
+      "address": "Rua tal Avenida tal 43",
+      "birthdate": "2024-06-06",
+      "phone": "23112312312",
+      "registration": 878269
     }
   ]
 }
