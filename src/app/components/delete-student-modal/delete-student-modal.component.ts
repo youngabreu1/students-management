@@ -1,5 +1,5 @@
 import { Component, Inject } from '@angular/core';
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { StudentService } from '../../services/student.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { StudentService } from '../../services/student.service';
   selector: 'app-delete-modal',
   templateUrl: './delete-student-modal.component.html',
   styleUrls: ['./delete-student-modal.component.css'],
+  imports: [MatDialogModule]
 })
 export class DeleteModalComponent {
   constructor(
@@ -20,13 +21,12 @@ export class DeleteModalComponent {
   }
 
   onYesClick(): void {
-    // Aqui você pode implementar a lógica de deleção
-    // Por exemplo, chamar um método no serviço para deletar o aluno
     this.studentService.deleteStudent(this.data.student.id).subscribe(() => {
-      // Lógica de sucesso
+
       this.dialogRef.close();
-    }, error => {
-      // Lógica de tratamento de erro
+    },
+    error => {
+
     });
   }
 
