@@ -54,7 +54,7 @@ Siga os passos abaixo:
 
 5️⃣ Para iniciar o json-server, execute o comando: `npx json-server db.json` dentro da pasta raiz.
 
-6️⃣ Para iniciar o Front-end, execute o comando: `ng serve` dentro da pasta raiz. Possivelmente, estará rodando em: localhost:4200
+6️⃣ Para iniciar o Front-end, execute o comando: `ng serve` dentro da pasta raiz. Possivelmente, estará rodando em: http://localhost:4200
 
 7️⃣ Para parar a aplicação, pressione `Ctrl+C` no terminal.
 
