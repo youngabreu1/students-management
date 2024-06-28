@@ -38,7 +38,7 @@ O projeto é composto de 2 entidades importantes para sua estrutura:
 # Rodando o projeto
 
 <details>
-  <summary><strong>🐳 Como inicializar</strong></summary><br />
+  <summary><strong>🥾 Como inicializar</strong></summary><br />
   
 É importante ressaltar que o projeto foi desenvolvido utilizando Node v20.14.0
 
