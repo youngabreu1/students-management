@@ -1,6 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA, MatDialogModule } from '@angular/material/dialog';
 import { StudentService } from '../../services/student.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   standalone: true,
@@ -12,7 +13,8 @@ import { StudentService } from '../../services/student.service';
 export class DeleteModalComponent {
   constructor(
     public dialogRef: MatDialogRef<DeleteModalComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any, public studentService: StudentService
+    @Inject(MAT_DIALOG_DATA) public data: any, public studentService: StudentService,
+    public toastr: ToastrService
   ) { }
 
   onNoClick(): void {
@@ -24,6 +26,7 @@ export class DeleteModalComponent {
     this.studentService.deleteStudent(this.data.student.id).subscribe(() => {
 
       this.dialogRef.close();
+      this.toastr.error('Aluno excluído com sucesso!');
     },
     error => {
 

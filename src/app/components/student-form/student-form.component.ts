@@ -57,7 +57,7 @@ export class StudentFormComponent implements OnInit{
       const newStudent: Student = this.studentForm.value;
       newStudent.registration = Math.floor(1000 + Math.random() * 9000000);
         this.studentService.updateStudent(this.studentId, newStudent).subscribe(() => {
-          this.toastr.success('Aluno atualizado com sucesso!');
+          this.toastr.info('Aluno atualizado com sucesso!');
           this.router.navigate(['/students']);
         });
       }
