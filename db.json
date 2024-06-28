@@ -2,13 +2,14 @@
   "students": [
     {
       "name": "Ana Souza",
+      "email": "ana@gmail.com",
       "cpf": "45678901234",
       "course": "Enfermagem",
       "campus": "João Monlevade",
       "address": "Av D, 101, Centro, João Monlevade, MG",
       "birthdate": "1998-11-30",
-      "phone": "(31) 96666-0004",
-      "registration": 3687504,
+      "phone": "31966660004",
+      "registration": 4037857,
       "id": "4"
     },
     {
@@ -188,39 +189,6 @@
       "cpf": "01234567890"
     },
     {
-      "id": "2873",
-      "name": "asdasdas",
-      "cpf": "11111222222",
-      "course": "asdas",
-      "campus": "asdasd",
-      "address": "asdasdas",
-      "birthdate": "2024-05-29",
-      "phone": "21321312321321",
-      "registration": 1162442
-    },
-    {
-      "id": "a506",
-      "name": "sdaasd",
-      "cpf": "11111111111",
-      "course": "asdasdasda",
-      "campus": "asdasdas",
-      "address": "asdasdas",
-      "birthdate": "2024-05-28",
-      "phone": "123123123",
-      "registration": 8664416
-    },
-    {
-      "name": "asdasd",
-      "cpf": "12131212321",
-      "course": "123awd",
-      "campus": "asdasd",
-      "address": "asdasdas",
-      "birthdate": "2024-05-29",
-      "phone": "31998421138",
-      "registration": 5710130,
-      "id": "f4eb"
-    },
-    {
       "name": "Mariana Domingues",
       "cpf": "02392352212",
       "course": "Ciências Contábeis",
@@ -232,15 +200,16 @@
       "id": "bbd1"
     },
     {
-      "id": "ee58",
       "name": "Gabriel",
+      "email": "Gabrielcarlos@gmail.com",
       "cpf": "12555342233",
       "course": "S.I",
       "campus": "Ipa",
       "address": "Rua tal, Avenida tanto",
       "birthdate": "2024-03-06",
       "phone": "31998421138",
-      "registration": 3236463
+      "registration": 7940437,
+      "id": "ee58"
     },
     {
       "id": "41f5",
@@ -253,6 +222,18 @@
       "birthdate": "2024-06-06",
       "phone": "23112312312",
       "registration": 878269
+    },
+    {
+      "id": "c715",
+      "name": "Gabriel Carlos",
+      "email": "gabrielcarlos@gcawe.com",
+      "cpf": "12566766674",
+      "course": "S.I",
+      "campus": "Ipatinga",
+      "address": "Rua Ametista",
+      "birthdate": "2024-06-11",
+      "phone": "31998421138",
+      "registration": 2546043
     }
   ]
 }
