@@ -1,127 +1,81 @@
-# Knowledge Base AI Project
-To run the project, please pay close attention to each step described. If you have any questions, feel free to contact me via email.
+# Boas vindas ao projeto Students Management
+Para rodar o projeto, atente-se a cada passo descrito, e se tiver qualquer dúvida, me envie por email!
 
-For a better experience with this README, please use the "Open Preview" function in your editor. In VSCode, the default shortcut is Ctrl + Shift + V.
+Para uma melhor experiência com o README utilize a função "Open Preview".
 
-# Project
-Here you will find a general overview of the project.
+No VSCode o atalho é `Ctrl + Shift + V` por padrão.
+
+# Projeto
+
+Aqui você terá acesso ao contexto geral do projeto.
 
 <details>
-<summary><strong>What was developed</strong></summary><br />
+<summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
 
-This project is a RESTful API that serves as an AI assistant for an internal knowledge base. The application uses a RAG (Retrieval-Augmented Generation) architecture to provide accurate and contextual answers. Instead of responding directly, the AI first queries a vector database to find relevant information and then uses that context to formulate the final response.
+O projeto é uma aplicação web **responsiva e funcional em dispositivos móveis**
 
-The development followed best practices for creating AI systems, ensuring a robust, scalable, and easily maintainable solution.
+O desenvolvimento do projeto seguiu rigorosamente as regras de negócio fornecidas, garantindo que o sistema atenda às necessidades e expectativas do trabalho.
 
 </details>
 
 <details>
-<summary><strong>Project Structure</strong></summary><br />
+<summary><strong>🏟️ Estrutura do projeto</strong></summary><br />
 
-The project is composed of several important entities for its structure:
+O projeto é composto de 2 entidades importantes para sua estrutura:
 
-### 1️⃣ API Server (Go Backend):
+1️⃣ **Front-end:**
+ - Foi o ambiente que realizei a maior parte das implementações exigidas.
+ - Roda na porta `4200`, ou em alguma outra porta disponível caso esteja em uso.;
+ - A aplicação é inicializada a partir da pasta raiz do projeto;
+ - Garanta que o `json-server` é executado e a aplicação ouve a porta `3000`;
 
-This is the core of the application, responsible for receiving questions, orchestrating the context retrieval, and generating answers.
-
-It exposes a /query endpoint for interaction.
-
-It runs on port 3030, or another port configured in the .env file.
-
-### 2️⃣ Ingestion Script (Seeder):
-
-A separate executable responsible for reading data from a primary source (an SQL database), generating embeddings (vector representations) via the Gemini API, and populating the vector database (Weaviate).
-
-It should be executed whenever the knowledge base needs to be updated.
-
-### 3️⃣ Weaviate (Vector Database):
-
-Run via Docker, it is responsible for storing the embeddings and enabling high-speed semantic similarity searches.
-
-The application connects to it for the "Retrieval" step of the RAG process.
-
-### 4️⃣ SQL Database:
-
-The primary source of the knowledge base. The ingestion script reads data from this source.
-
-The connection is configured via the .env file.
-
-### 5️⃣ Google Gemini API:
-
-An external service used for two purposes:
-
-Generating embeddings from the text data.
-
-Generating the final natural language response, based on the retrieved context.
+2️⃣ **Json-server:**
+  - Configurei o `db.json`, que se encontra na raiz do projeto, para conseguir inicializar a aplicação;
+  - O Json server simulará uma APIRESTFUL para realizarmos as consultas na API do nosso projeto.
 
 </details>
 
-# Running the project
+# Rodando o projeto
+
 <details>
-<summary><strong>How to initialize</strong></summary><br />
+  <summary><strong>🥾 Como inicializar</strong></summary><br />
+  
+É importante ressaltar que o projeto foi desenvolvido utilizando Node v20.14.0
 
-It is important to note that the project was developed using Go v1.21 or higher.
+Siga os passos abaixo:
 
-Follow the steps below:
+1️⃣ Clone esse repositório: `git clone https://github.com/youngabreu1/students-management.git`
 
-### 1️⃣ Clone this repository:
-git clone [YOUR-REPOSITORY-URL]
+2️⃣ Baixe e instale o CLI (Command Line Interface) do Angular 18 globalmente: `npm install -g @angular/cli .`
 
-### 2️⃣ Start Weaviate with Docker:
-Navigate to the project's root folder and run the command:
-docker-compose up -d
+3️⃣ Baixe e instale o Json Server: ` npm i json-server`
 
-### 3️⃣ Configure environment variables:
-Create a .env file in the project root, using the example below as a template. Fill it with your credentials.
+4️⃣ Navegue até a pasta raiz do projeto e execute o comando `npm install` para instalar os pacotes e dependências.
 
-# Server Configuration
-PORT=8080
+5️⃣ Para iniciar o json-server, execute o comando: `npx json-server db.json` dentro da pasta raiz.
 
-# Google Gemini API Key
-GEMINI_API_KEY="YOUR_API_KEY_HERE"
+6️⃣ Para iniciar o Front-end, execute o comando: `ng serve` dentro da pasta raiz. Possivelmente, estará rodando em: http://localhost:4200
 
-# Weaviate Vector Database Configuration
-WEAVIATE_HOST="localhost:8080"
-WEAVIATE_SCHEME="http"
-
-# Your SQL Database Configuration
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=your_user
-DB_PASSWORD=your_password
-DB_NAME=knowledge_base_db
-### 4️⃣ Install project dependencies:
-Navigate to the project's root folder and run the command to download the Go packages:
-go mod tidy
-
-### 5️⃣ Populate the knowledge base:
-Run the ingestion script to read data from your SQL database and save it into Weaviate.
-go run ./cmd/seeder/main.go
-
-### 6️⃣ Start the API:
-Run the command to start the main server.
-go run ./main.go
-The API will be running at: http://localhost:8080
-
-### 7️⃣ To stop the application, press Ctrl+C in the terminal where the server is running.
+7️⃣ Para parar a aplicação, pressione `Ctrl+C` no terminal.
 
 </details>
 
-Final Considerations
+# Considerações finais
+
+
+
 <details>
-<summary><strong>Important Notes</strong></summary><br />
+  <summary><strong>🔍 Observações importantes</strong></summary><br />
 
-It was assumed that all inputs provided to the API are valid. Therefore, complex input validations in the API handler were not implemented. In a real-world production scenario, it would be important to add appropriate checks and validations to ensure the application's robustness and security.
-
-It is also expected that the SQL database is already configured, populated, and accessible before running the ingestion script.
+Assumi que todas as entradas fornecidas são válidas. Portanto, não implementei validações de entrada. Em um cenário real, seria importante adicionar verificações e validações adequadas para garantir a robustez e a segurança da aplicação.
 
 </details>
 
 <details>
-<summary><strong>Give me some feedback!</strong></summary><br />
+  <summary><strong>🗣 Me dê um feedback!</strong></summary><br />
 
-I would be very grateful if you could share your feedback on this project. Your input is essential for my continuous learning and improvement. If you have any suggestions, constructive criticism, or comments, please do not hesitate to get in touch.
+Ficarei muito grato se você puder compartilhar seu feedback sobre este projeto. Seu retorno é essencial para o meu aprendizado e aprimoramento contínuo. Se você tiver qualquer sugestão, crítica construtiva ou comentário, por favor, não hesite em entrar em contato comigo.
 
-My email: gabrielcarlos0705@gmail.com
+Meu email: `gabrielcarlos0705@gmail.com`
 
 </details>
